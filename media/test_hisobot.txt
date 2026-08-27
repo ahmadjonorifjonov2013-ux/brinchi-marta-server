@@ -1,0 +1,7 @@
+=== AVTOMATIK YARATILGAN HISOBOT ===
+
+1-qator: Ma'lumotlar qayta ishlandi va yozildi.
+2-qator: Ma'lumotlar qayta ishlandi va yozildi.
+3-qator: Ma'lumotlar qayta ishlandi va yozildi.
+4-qator: Ma'lumotlar qayta ishlandi va yozildi.
+5-qator: Ma'lumotlar qayta ishlandi va yozildi.
