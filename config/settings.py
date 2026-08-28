@@ -25,7 +25,7 @@ ALLOWED_HOSTS = [
     host.strip()
     for host in os.getenv(
         "ALLOWED_HOSTS",
-        "127.0.0.1,localhost"
+        "127.0.0.1,localhost, 189.74.97.177, ahmadjon.sharqSoft.uz"
     ).split(",")
     if host.strip()
 ]
@@ -106,14 +106,16 @@ TEMPLATES = [
 # =========================================================
 # DATABASE
 # =========================================================
-
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.getenv("DB_NAME"),
+        "USER": os.getenv("DB_USER"),
+        "PASSWORD": os.getenv("DB_PASSWORD"),
+        "HOST": os.getenv("DB_HOST", "127.0.0.1"),
+        "PORT": os.getenv("DB_PORT", "5432"),
     }
 }
-
 
 # =========================================================
 # PASSWORD VALIDATION
