@@ -3,9 +3,12 @@ from datetime import timedelta
 import os
 from urllib.parse import quote
 from dotenv import load_dotenv
+import os
+
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 load_dotenv(BASE_DIR / ".env")
 
@@ -155,6 +158,9 @@ USE_TZ = True
 # =========================================================
 
 STATIC_URL = "static/"
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
